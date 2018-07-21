@@ -1,0 +1,17 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+#  cloud:
+#    inetutils:
+#      ignored-interfaces:
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    prefer-ip-address: true
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:8000,localhost:8800
