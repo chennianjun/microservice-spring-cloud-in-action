@@ -11,8 +11,15 @@
     <modules>
         <module>microservice-simple-provider-user</module>
 		<module>microservice-provider-user</module>
+		<module>microservice-provider-user-multi-param</module>
+		<module>microservice-provider-user-with-auth</module>
         <module>microservice-simple-consumer-movie</module>
 		<module>microservice-consumer-movie-feign</module>
+		<module>microservice-consumer-movie-feign-hystrix-fallback</module>
+		<module>microservice-consumer-movie-feign-hystrix-fallback-factory</module>
+		<module>microservice-consumer-movie-feign-multi-param</module>
+		<module>microservice-consumer-movie-feign-logging</module>
+		<module>microservice-consumer-movie-feign-manual</module>
 		<module>microservice-consumer-movie-feign-customizing</module>
 		<module>microservice-consumer-movie</module>
         <module>microservice-discovery-eureka</module>
@@ -21,6 +28,7 @@
 		<module>microservice-consumer-movie-ribbon-customizing</module>
 		<module>microservice-consumer-movie-ribbon-custom-properties</module>
 		<module>microservice-consumer-movie-ribbon-without-eureka</module>
+		<module>microservice-consumer-movie-ribbon-hystrix</module>
     </modules>
 
     <properties>

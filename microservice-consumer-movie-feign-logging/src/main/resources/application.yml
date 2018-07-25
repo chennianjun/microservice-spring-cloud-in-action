@@ -1,0 +1,17 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+#  cloud:
+#    inetutils:
+#      ignored-interfaces:
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  level:
+    com.base.cloud.service.UserFeignClientService: DEBUG #将feign接口的日志级别设置成DEBUG,因为Feign的Logger.Level只对DEBUG做出相应
