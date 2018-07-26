@@ -1,0 +1,13 @@
+server:
+  port: 8051
+spring:
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chennianjun/springcloudconfig #配置git地址
+          username: 459967475@qq.com #git账号
+          password: Love941207.*
+          search-paths: spring-cloud-config-repo

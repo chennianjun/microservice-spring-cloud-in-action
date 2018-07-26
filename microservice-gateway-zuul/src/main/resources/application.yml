@@ -1,0 +1,30 @@
+server:
+  port: 8040
+spring:
+  application:
+    name: microservice-gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#1、配置zuul的路由规则
+zuul:
+  routes:
+    microservice-provider-user: /user/**
+#2、忽略指定的微服务
+#zuul.ignored-services: 微服务的instanceId,忽略所有使用‘*’
+#3、配置路由的另一种方式
+#zuul.routes.[任意名称].service-id: 微服务的instanceId
+#zuul.routes.[任意名称].path: 对应微服务的instanceId路由的路径
+#4、指定path和url,该方式对负载均衡和断路器不起作用
+#zuul.routes.[任意名称].url: 微服务的对应的url
+#zuul.routes.[任意名称].path: 对应微服务的instanceId路由的路径
+
+#5、为指定服务指定敏感的header
+#zuul.routes.[服务的instanceId].path: /user/**
+#zuul.routes.[服务的instanceId].sensitive-headers: Cookies,Set-Cookie,Authorization
+#zuul.routes.[服务的instanceId].url: url
+#6、指定全局的header信息
+#zuul.sensitive-headers: Cookies,Set-Cookie,Authorization 方式5的配置会覆盖方式6
+#7、忽略header
+#zuul.ignored-header: 要忽略的头信息

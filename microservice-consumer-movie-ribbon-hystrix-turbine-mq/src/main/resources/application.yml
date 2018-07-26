@@ -1,8 +1,13 @@
 server:
-  port: 8020
+  port: 8010
 spring:
   application:
-    name: microservice-consumer-movie-hystrix-stream
+    name: microservice-consumer-movie
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 #  cloud:
 #    inetutils:
 #      ignored-interfaces:
