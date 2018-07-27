@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: microservice-foo
+  cloud:
+    config:
+      profile: test #对应配置文件规则中的{profile}部分
+      label: config-label-v2.0 #对应git的分支
+      uri: http://localhost:8051/ #配置中心config-server的地址
+      name: microserver-foo #读取文件的文件名，默认为application
+      fail-fast: true #实现快速失败，减少启动的等待时间

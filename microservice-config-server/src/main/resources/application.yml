@@ -8,6 +8,6 @@ spring:
       server:
         git:
           uri: https://github.com/chennianjun/springcloudconfig #配置git地址
-          username: 459967475@qq.com #git账号
-          password: Love941207.*
+          username: ******* #git账号
+          password: *******
           search-paths: spring-cloud-config-repo
