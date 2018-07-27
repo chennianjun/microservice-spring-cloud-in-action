@@ -11,3 +11,4 @@ spring:
           username: ******* #git账号
           password: *******
           search-paths: spring-cloud-config-repo
+
